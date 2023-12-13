@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyfranka
+Version: 0.2
+Summary: Python 3 control interface for Franka Panda robot
+Home-page: https://github.com/jlloyd237/pyfranka
+Author: John Lloyd
+Author-email: jlloyd237@gmail.com
+License: GPLv3
+Requires-Python: >=3.7
+License-File: LICENSE

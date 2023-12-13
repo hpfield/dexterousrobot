@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyfranka/__init__.py
+pyfranka.egg-info/PKG-INFO
+pyfranka.egg-info/SOURCES.txt
+pyfranka.egg-info/dependency_links.txt
+pyfranka.egg-info/not-zip-safe
+pyfranka.egg-info/top_level.txt

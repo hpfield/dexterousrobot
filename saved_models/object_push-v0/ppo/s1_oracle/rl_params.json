@@ -1,0 +1,1 @@
+{"algo_name": "ppo", "env_id": "object_push-v0", "policy": "MultiInputPolicy", "seed": 1, "n_stack": 1, "total_timesteps": 1000000, "n_eval_episodes": 10, "n_envs": 10, "eval_freq": 2000.0, "norm_obs": false, "norm_reward": false}

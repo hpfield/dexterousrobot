@@ -1,0 +1,23 @@
+contourpy==1.2.0
+cycler==0.12.1
+distlib==0.3.7
+filelock==3.13.1
+fonttools==4.45.1
+kiwisolver==1.4.5
+matplotlib==3.8.2
+numpy==1.26.2
+opencv-python==4.8.1.78
+opensimplex==0.4.5
+packaging==23.2
+Pillow==10.1.0
+platformdirs==4.0.0
+pybullet==3.2.5
+pyparsing==3.1.1
+python-dateutil==2.8.2
+six==1.16.0
+tactile-data @ file:///home/harry/Documents/dexterousrobot/tactile_data
+-e git+https://github.com/dexterousrobot/tactile_image_processing@34cb02a3607f6ace019a4411ba42c6c9799b60d3#egg=tactile_image_processing
+tactile-learning @ file:///home/harry/Documents/dexterousrobot/tactile_learning
+-e git+https://github.com/dexterousrobot/tactile_servo_control.git@3227a33115cc566831e644e25f872bc0b8e78a5f#egg=tactile_servo_control
+tactile-sim @ file:///home/harry/Documents/dexterousrobot/tactile_sim
+virtualenv==20.24.7
