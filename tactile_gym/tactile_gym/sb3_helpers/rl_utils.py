@@ -21,7 +21,6 @@ def make_training_envs(env_id, env_args, rl_params, save_dir):
         env_kwargs=env_args,
     )
 
-
     # normalize obs/rew with running metrics
     env = VecNormalize(
         env,
@@ -56,12 +55,12 @@ def make_eval_env(
     eval_env = DummyVecEnv([lambda: eval_env])
 
     # normalize obs/rew with running metrics
-    # eval_env = VecNormalize(
-    #     eval_env,
-    #     training=False,
-    #     norm_obs=rl_params['norm_obs'],
-    #     norm_reward=rl_params['norm_reward'],
-    # )
+    eval_env = VecNormalize(
+        eval_env,
+        training=False,
+        norm_obs=rl_params['norm_obs'],
+        norm_reward=rl_params['norm_reward'],
+    )
 
     # stack observations
     eval_env = VecFrameStack(eval_env, n_stack=rl_params["n_stack"])
