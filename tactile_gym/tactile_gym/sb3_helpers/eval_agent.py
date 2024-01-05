@@ -5,7 +5,7 @@ import cv2
 
 import stable_baselines3 as sb3
 
-import tactile_gym.envs
+import tactile_gym.envs 
 from tactile_gym.sb3_helpers.rl_utils import make_eval_env
 from tactile_learning.utils.utils_learning import load_json_obj
 # from tactile_gym.utils.utils_learning import load_json_obj
