@@ -24,7 +24,7 @@ env_args = {
 
         # "control_mode": "tcp_position_control",
         "control_mode": "tcp_velocity_control",
-        "control_dofs": ["x", "y", "z", "Rx", "Ry", "Rz"],
+        "control_dofs": ["x", "y", "z", "Rx", "Ry", "z"],
 
         # the type of control used
         # "control_mode": "joint_position_control",

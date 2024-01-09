@@ -181,14 +181,7 @@ class BaseSurfaceEnv(BaseTactileEnv):
         Update an already loaded surface with random noise.
         """
         # set seed for simplex noise
-        try:
-            seed=self.np_random.integers(1e8)
-        except AttributeError as e:
-            print(f"AttributeError: {e}")
-            print("Using self.np_random.randint instead.")
-            seed=self.np_random.randint(1e8)
-
-        self.simplex_noise = OpenSimplex(seed=seed)
+        self.simplex_noise = OpenSimplex(seed=self.np_random.randint(1e8))
         self.heightfield_data = self.gen_simplex_heigtfield()
 
         # update heightfield
