@@ -1,0 +1,55 @@
+asttokens==2.4.1
+cloudpickle==3.0.0
+contourpy==1.2.0
+cycler==0.12.1
+decorator==5.1.1
+distlib==0.3.7
+executing==2.0.1
+filelock==3.13.1
+fonttools==4.45.1
+fsspec==2024.2.0
+gym==0.26.2
+gym-notices==0.0.8
+ipdb==0.13.13
+ipython==8.21.0
+jedi==0.19.1
+Jinja2==3.1.3
+kiwisolver==1.4.5
+MarkupSafe==2.1.5
+matplotlib==3.8.2
+matplotlib-inline==0.1.6
+mpmath==1.3.0
+networkx==3.2.1
+numpy==1.26.2
+opencv-python==4.8.1.78
+opensimplex==0.4.5
+packaging==23.2
+pandas==2.2.0
+parso==0.8.3
+pexpect==4.9.0
+Pillow==10.1.0
+platformdirs==4.0.0
+prompt-toolkit==3.0.43
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pybullet==3.2.5
+Pygments==2.17.2
+pyparsing==3.1.1
+python-dateutil==2.8.2
+pytz==2024.1
+setuptools==69.0.3
+six==1.16.0
+stable-baselines3==1.2.0
+stack-data==0.6.3
+sympy==1.12
+-e git+https://github.com/hpfield/dexterousrobot.git@be51b0b22f707ec6d0e7a0598b84243e0000a954#egg=tactile_data&subdirectory=tactile_data
+-e git+https://github.com/hpfield/dexterousrobot.git@be51b0b22f707ec6d0e7a0598b84243e0000a954#egg=tactile_gym&subdirectory=tactile_gym
+-e git+https://github.com/hpfield/dexterousrobot.git@be51b0b22f707ec6d0e7a0598b84243e0000a954#egg=tactile_learning&subdirectory=tactile_learning
+-e git+https://github.com/hpfield/dexterousrobot.git@be51b0b22f707ec6d0e7a0598b84243e0000a954#egg=tactile_sim&subdirectory=tactile_sim
+torch==2.2.0
+tqdm==4.66.1
+traitlets==5.14.1
+typing_extensions==4.9.0
+tzdata==2023.4
+wcwidth==0.2.13
+wheel==0.42.0
