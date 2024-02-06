@@ -6,6 +6,7 @@ from tactile_sim.sensors.tactile_sensor import TactileSensor
 from tactile_sim.sensors.vision_sensor import VisionSensor
 
 
+
 class ArmEmbodiment:
     def __init__(
         self,
@@ -201,7 +202,7 @@ class VisualArmEmbodiment(ArmEmbodiment):
         # instantiate a robot arm
         self.arm = arm_mapping[self.arm_type](
             pb,
-            embodiment_id=self.embodiment_id,
+            embodiment_id=self.embodiment_id, 
             tcp_link_id=self.tcp_link_id,
             link_name_to_index=self.link_name_to_index,
             joint_name_to_index=self.joint_name_to_index,
@@ -256,7 +257,7 @@ class VisuoTactileArmEmbodiment(TactileArmEmbodiment):
         # connect a tactile sensor
         self.tactile_sensor = TactileSensor(
             pb,
-            embodiment_id=self.embodiment_id,
+            embodiment_id=self.embodiment_id, # embodiment_id is same as robotic_arm_asset
             link_name_to_index=self.link_name_to_index,
             joint_name_to_index=self.joint_name_to_index,
             image_size=tactile_sensor_params["image_size"],
@@ -275,5 +276,14 @@ class VisuoTactileArmEmbodiment(TactileArmEmbodiment):
             **visual_sensor_params
         )
 
+        self.save("VisuoTactileArmEmbodiment_variables.txt")
+
     def get_visual_observation(self):
         return self.vision_sensor.get_observation()
+    
+    # Function to save all class variables to file as text
+    def save(self, filename):
+        with open(filename, "w") as f:
+            for key, value in self.__dict__.items():
+                f.write(f"{key} : {value}\n")
+    

@@ -1,0 +1,110 @@
+_seed : None
+_np_random : Generator(PCG64)
+_sim_time_step : 0.004166666666666667
+_control_rate : 0.1
+_velocity_action_repeat : 24
+_max_blocking_pos_move_steps : 10
+_env_params : {'max_steps': 200, 'show_gui': False, 'observation_mode': 'tactile', 'workframe': array([ 0.65      ,  0.        ,  0.035     , -3.14159265,  0.        ,
+        1.57079633]), 'tcp_lims': array([[-0.175     ,  0.175     ],
+       [-0.175     ,  0.175     ],
+       [-0.1       ,  0.1       ],
+       [ 0.        ,  0.        ],
+       [ 0.        ,  0.        ],
+       [-3.14159265,  3.14159265]])}
+_robot_arm_params : {'type': 'ur5', 'control_mode': 'tcp_velocity_control', 'control_dofs': ['x', 'y'], 'use_tcp_frame_control': False, 'rest_poses': array([ 0.   ,  0.315, -1.401, -2.401, -0.908,  1.57 ,  3.461,  0.   ,
+        0.   ,  0.   ,  0.   ,  0.   ]), 'tcp_link_name': 'tcp_link'}
+_tactile_sensor_params : {'type': 'standard_tactip', 'image_size': [128, 128], 'turn_off_border': False, 'show_tactile': False, 'core': 'no_core', 'dynamics': {'stiffness': 50, 'damping': 100, 'friction': 10.0}}
+_visual_sensor_params : {'image_size': [128, 128], 'show_vision': False, 'dist': 0.4, 'yaw': 90.0, 'pitch': -25.0, 'pos': [0.65, 0.0, 0.035], 'fov': 75.0, 'near_val': 0.1, 'far_val': 100.0}
+_max_steps : 200
+_show_gui : False
+_observation : {'tactile': array([[[109],
+        [109],
+        [109],
+        ...,
+        [144],
+        [144],
+        [144]],
+
+       [[109],
+        [109],
+        [109],
+        ...,
+        [144],
+        [144],
+        [146]],
+
+       [[109],
+        [109],
+        [109],
+        ...,
+        [144],
+        [146],
+        [146]],
+
+       ...,
+
+       [[131],
+        [131],
+        [131],
+        ...,
+        [166],
+        [166],
+        [166]],
+
+       [[131],
+        [131],
+        [131],
+        ...,
+        [166],
+        [166],
+        [166]],
+
+       [[131],
+        [131],
+        [131],
+        ...,
+        [166],
+        [166],
+        [166]]], dtype=uint8)}
+_env_step_counter : 0
+_first_render : True
+_render_closed : False
+_workframe : [ 0.65        0.          0.035      -3.14159265  0.          1.57079633]
+_tcp_lims : [[-0.175       0.175     ]
+ [-0.175       0.175     ]
+ [-0.1         0.1       ]
+ [ 0.          0.        ]
+ [ 0.          0.        ]
+ [-3.14159265  3.14159265]]
+_pb : <pybullet_utils.bullet_client.BulletClient object at 0x15c28fbf0>
+_physics_client_id : 0
+reset_counter : 1
+reset_limit : 100
+embodiment : <tactile_sim.embodiments.embodiments.VisuoTactileArmEmbodiment object at 0x15c2b5a00>
+termination_dist : 0.01
+embed_dist : 0.005787974936267934
+edge_pos : [0.65, 0.0, 0.0]
+edge_height : 0.035
+edge_len : 0.175
+edge_stim_id : 3
+goal_indicator : 4
+edge_ang : 2.9327568519093026
+edge_orn : (0.0, 0.0, 0.994553402423321, 0.10422825782001603)
+goal_pos_worldframe : [0.47880223540486855, 0.03628119895524322, 0.035]
+goal_rpy_worldframe : [0, 0, 0]
+goal_orn_worldframe : (0.0, 0.0, 0.0, 1.0)
+goal_pose_worldframe : [0.47880224 0.0362812  0.035      0.         0.         0.        ]
+goal_pose_workframe : [ 3.62811983e-02 -1.71197742e-01  0.00000000e+00  3.14159265e+00
+  1.22464678e-16  1.57079633e+00]
+edge_end_points : [[ 0.82119776 -0.0362812   0.035     ]
+ [ 0.47880224  0.0362812   0.035     ]]
+cur_tcp_pose_worldframe : [ 6.49989384e-01  6.34698552e-07  2.92089085e-02  3.14158931e+00
+ -1.39541323e-07  1.57079611e+00]
+cur_tcp_pos_worldframe : [6.49989384e-01 6.34698552e-07 2.92089085e-02]
+min_action : -1.0
+max_action : 1.0
+lin_vel_lim : 0.01
+ang_vel_lim : 0.08726646259971647
+act_dim : 2
+action_space : Box(-1.0, 1.0, (2,), float32)
+observation_space : Dict('tactile': Box(0, 255, (128, 128, 1), uint8))

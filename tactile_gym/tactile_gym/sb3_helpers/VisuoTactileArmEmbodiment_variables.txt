@@ -1,0 +1,15 @@
+_pb : <pybullet_utils.bullet_client.BulletClient object at 0x15c28fbf0>
+arm_type : ur5
+tactile_sensor_type : standard_tactip
+tcp_link_name : tcp_link
+base_pos : [0, 0, 0]
+base_rpy : [0, 0, 0]
+base_orn : (0.0, 0.0, 0.0, 1.0)
+embodiment_id : 0
+num_joints : 11
+link_name_to_index : {'base_link': 0, 'shoulder_link': 1, 'upper_arm_link': 2, 'forearm_link': 3, 'wrist_1_link': 4, 'wrist_2_link': 5, 'wrist_3_link': 6, 'ee_link': 7, 'tactip_body_link': 8, 'tactip_tip_link': 9, 'tcp_link': 10}
+joint_name_to_index : {'world_joint': 0, 'base_joint': 1, 'shoulder_joint': 2, 'elbow_joint': 3, 'wrist_1_joint': 4, 'wrist_2_joint': 5, 'wrist_3_joint': 6, 'ee_joint': 7, 'joint_dummy1': 8, 'tactip_tip_to_body': 9, 'tcp_joint': 10}
+tcp_link_id : 10
+arm : <tactile_sim.robots.arms.ur5.ur5.UR5 object at 0x15c0ce6c0>
+tactile_sensor : <tactile_sim.sensors.tactile_sensor.TactileSensor object at 0x15c2b5af0>
+vision_sensor : <tactile_sim.sensors.vision_sensor.VisionSensor object at 0x15c2b5b50>

@@ -8,6 +8,8 @@ from tactile_sim.embodiments.embodiments import VisuoTactileArmEmbodiment
 from tactile_gym.assets import add_assets_path
 from tactile_gym.envs.base_tactile_env import BaseTactileEnv
 
+import pickle
+
 
 class EdgeFollowEnv(BaseTactileEnv):
     def __init__(
@@ -74,6 +76,8 @@ class EdgeFollowEnv(BaseTactileEnv):
         # setup variables
         self.setup_action_space()
         self.setup_observation_space()
+
+        self.save("edge_follow_env.txt")
 
     def setup_edge(self):
         """
@@ -295,3 +299,9 @@ class EdgeFollowEnv(BaseTactileEnv):
             ]
         )
         return observation
+
+    # Function to save all class variables to file as text
+    def save(self, filename):
+        with open(filename, "w") as f:
+            for key, value in self.__dict__.items():
+                f.write(f"{key} : {value}\n")
